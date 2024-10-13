@@ -13,7 +13,11 @@
                 <h2 class="h2"> &#8377; {{ item.item_price }}</h2>
             </div>
             <div class="col-md-2">
-                <a href="{% url 'food:detail' item.id %}" class="btn btn-primary">view</a>
+                <!-- <a href="{% url 'food:detail' item.id %}" class="btn btn-primary">view</a> -->
+                <div class="d-grid gap-2 d-md-block">
+                    <a href="{% url 'food:detail' item.id %}" class="btn btn-success" type="button">details</a>
+                    <a href="{% url 'food:update_item' item.id %}" class="btn btn-primary" type="button">edit</a>
+                </div>
             </div>
         </div>
         

@@ -9,6 +9,9 @@
             <div class="col my-4">
                 {{ item.item_prep }}
             </div>
+            <div class="col-12 my-3">
+                <a href="{% url 'food:delete_item' item.id %}" class="btn btn-danger">delete</a>
+            </div>
         </div>
     </div>
     {% endblock %}
